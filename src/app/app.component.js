@@ -17,8 +17,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n        <app-other></app-other>\n        <app-another>\n            <div>\n                <h2>hello</h2>\n                <p>world</p>\n            </div>\n        </app-another>\n        <app-another>\n            <p>something else</p>\n        </app-another>\n    ",
-            styles: ["\n        h1 {\n            color: red;\n        }\n    "]
+            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n        <p>1</p>\n    </fa-databindins>\n    \n    <fa-databindins>\n        <p>2</p>\n    </fa-databindins>\n    \n    <fa-databindins>\n        <p>3</p>\n    </fa-databindins>\n\n    ",
+            styles: ["\n        h1 {\n            color: red;\n        }\n       \n    "],
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
