@@ -3,6 +3,8 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component'
 import {BackServices} from "./databinding/back.services";
+import {PropertyBindComponent} from "./databinding/proprerty-bind.componet";
+
 @NgModule({
     imports: [
         BrowserModule
@@ -11,7 +13,8 @@ import {BackServices} from "./databinding/back.services";
     ],
     declarations: [
         AppComponent,
-        DatabindingComponent
+        DatabindingComponent,
+        PropertyBindComponent
     ],
     bootstrap: [ AppComponent ],
     providers: [ BackServices]

@@ -19,7 +19,9 @@ export class DatabindingComponent {
     stringInterpolation = "stringInterpolation";
     number = 1;
     constructor() {
+
     }
+
 
     ontest(){
         return true;
