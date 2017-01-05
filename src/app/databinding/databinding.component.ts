@@ -2,27 +2,26 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'fa-databindins',
-    template: `
-<article>
-       <ng-content></ng-content>
-</article>
-
-<article>
-    {{stringInterpolation}}
-    {{number}}
-</article>
-    `,
+    templateUrl: 'databinding.component.html',
     styles: [`
             article{
                 border: 3px solid red;
                 margin-bottom: 5px;
             }
+            .greenBorder{
+            border: 2px solid green;
+            }
+            
         `]
 })
 
 export class DatabindingComponent {
-    stringInterpolation = "string";
+    stringInterpolation = "stringInterpolation";
     number = 1;
     constructor() {
+    }
+
+    ontest(){
+        return true;
     }
 }

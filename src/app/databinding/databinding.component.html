@@ -1,0 +1,19 @@
+<article>
+    <ng-content></ng-content>
+</article>
+
+
+<h1>Strung interpolation</h1>
+<article>
+    {{stringInterpolation}}
+    {{number}}
+</article>
+
+<h1>property Binding</h1>
+<hr>
+<div>
+    <input type="text" [value]="stringInterpolation">
+    <p [ngClass] = "{greenBorder: ontest()}"> Styles</p>
+    <p [ngStyle] = "{color: 'blue'}"> Color</p>
+
+</div>
