@@ -7,15 +7,14 @@ import {BackServices} from "./databinding/back.services";
     template: `
         <h1>{{title}}</h1>
    <fa-databindins>
-    </fa-databindins>
-
+     test
+   </fa-databindins>
    
     `,
     styles: [`
         h1 {
             color: red;
         }
-       
     `],
 
 })
@@ -23,7 +22,7 @@ export class AppComponent {
     title = "general";
 
     constructor(private _back: BackServices) {
-
+        this.ser();
     }
 
     ser() {

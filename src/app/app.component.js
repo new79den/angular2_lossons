@@ -15,6 +15,7 @@ var AppComponent = (function () {
     function AppComponent(_back) {
         this._back = _back;
         this.title = "general";
+        this.ser();
     }
     AppComponent.prototype.ser = function () {
         this._back.wq1();
@@ -22,8 +23,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n    </fa-databindins>\n\n   \n    ",
-            styles: ["\n        h1 {\n            color: red;\n        }\n       \n    "],
+            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n     test\n   </fa-databindins>\n   \n    ",
+            styles: ["\n        h1 {\n            color: red;\n        }\n    "],
         }), 
         __metadata('design:paramtypes', [back_services_1.BackServices])
     ], AppComponent);
