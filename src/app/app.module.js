@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var databinding_component_1 = require('./databinding/databinding.component');
+var back_services_1 = require("./databinding/back.services");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,7 +25,8 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 databinding_component_1.DatabindingComponent
             ],
-            bootstrap: [app_component_1.AppComponent]
+            bootstrap: [app_component_1.AppComponent],
+            providers: [back_services_1.BackServices]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

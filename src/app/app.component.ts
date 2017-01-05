@@ -1,22 +1,15 @@
 import { Component } from '@angular/core';
 
 import '../../public/css/styles.css';
+import {BackServices} from "./databinding/back.services";
 @Component({
     selector: 'my-app',
     template: `
         <h1>{{title}}</h1>
    <fa-databindins>
-        <p>1</p>
-    </fa-databindins>
-    
-    <fa-databindins>
-        <p>2</p>
-    </fa-databindins>
-    
-    <fa-databindins>
-        <p>3</p>
     </fa-databindins>
 
+   
     `,
     styles: [`
         h1 {
@@ -28,4 +21,12 @@ import '../../public/css/styles.css';
 })
 export class AppComponent {
     title = "general";
+
+    constructor(private _back: BackServices) {
+
+    }
+
+    ser() {
+        this._back.wq1()
+    }
 }

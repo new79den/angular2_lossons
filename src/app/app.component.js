@@ -10,17 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 require('../../public/css/styles.css');
+var back_services_1 = require("./databinding/back.services");
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(_back) {
+        this._back = _back;
         this.title = "general";
     }
+    AppComponent.prototype.ser = function () {
+        this._back.wq1();
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n        <p>1</p>\n    </fa-databindins>\n    \n    <fa-databindins>\n        <p>2</p>\n    </fa-databindins>\n    \n    <fa-databindins>\n        <p>3</p>\n    </fa-databindins>\n\n    ",
+            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n    </fa-databindins>\n\n   \n    ",
             styles: ["\n        h1 {\n            color: red;\n        }\n       \n    "],
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [back_services_1.BackServices])
     ], AppComponent);
     return AppComponent;
 }());
