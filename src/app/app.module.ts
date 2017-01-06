@@ -5,6 +5,7 @@ import { DatabindingComponent } from './databinding/databinding.component'
 import {BackServices} from "./databinding/back.services";
 import {PropertyBindComponent} from "./databinding/proprerty-bind.componet";
 import {EventBindingComponent} from "./databinding/event-binding.component";
+import {twoWayBinding} from "./databinding/two-way-binding.component";
 
 @NgModule({
     imports: [
@@ -16,7 +17,8 @@ import {EventBindingComponent} from "./databinding/event-binding.component";
         AppComponent,
         DatabindingComponent,
         PropertyBindComponent,
-        EventBindingComponent
+        EventBindingComponent,
+        twoWayBinding
     ],
     bootstrap: [ AppComponent ],
     providers: [ BackServices]
