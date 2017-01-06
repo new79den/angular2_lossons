@@ -23,6 +23,7 @@ export class AppComponent {
 
     constructor(private _back: BackServices) {
         this.ser();
+
     }
 
     ser() {

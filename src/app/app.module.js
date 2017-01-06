@@ -14,6 +14,7 @@ var app_component_1 = require('./app.component');
 var databinding_component_1 = require('./databinding/databinding.component');
 var back_services_1 = require("./databinding/back.services");
 var proprerty_bind_componet_1 = require("./databinding/proprerty-bind.componet");
+var event_binding_component_1 = require("./databinding/event-binding.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -25,7 +26,8 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 databinding_component_1.DatabindingComponent,
-                proprerty_bind_componet_1.PropertyBindComponent
+                proprerty_bind_componet_1.PropertyBindComponent,
+                event_binding_component_1.EventBindingComponent
             ],
             bootstrap: [app_component_1.AppComponent],
             providers: [back_services_1.BackServices]
