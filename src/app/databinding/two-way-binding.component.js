@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var twoWayBinding = (function () {
-    function twoWayBinding() {
+var TwoWayBinding = (function () {
+    function TwoWayBinding() {
         this.person = {
             name: "Denis",
             age: 29
         };
     }
-    twoWayBinding = __decorate([
+    TwoWayBinding = __decorate([
         core_1.Component({
             selector: 'two-way-binding',
-            template: "\n        <input type=\"text\" >        \n    "
+            template: "\n        <input type=\"text\" > \n        <input type=\"text\" value=\"{{ person.name }}\"> \n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], twoWayBinding);
-    return twoWayBinding;
+    ], TwoWayBinding);
+    return TwoWayBinding;
 }());
-exports.twoWayBinding = twoWayBinding;
+exports.TwoWayBinding = TwoWayBinding;
 //# sourceMappingURL=two-way-binding.component.js.map

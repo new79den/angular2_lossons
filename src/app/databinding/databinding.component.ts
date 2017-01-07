@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-
 @Component({
     selector: 'fa-databindins',
     templateUrl: 'databinding.component.html',
@@ -12,7 +11,7 @@ import {Component} from '@angular/core';
             border: 2px solid green;
             }
             
-        `]
+        `],
 })
 
 export class DatabindingComponent {

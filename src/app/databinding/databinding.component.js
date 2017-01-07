@@ -24,7 +24,7 @@ var DatabindingComponent = (function () {
         core_1.Component({
             selector: 'fa-databindins',
             templateUrl: 'databinding.component.html',
-            styles: ["\n            article{\n                border: 3px solid red;\n                margin-bottom: 5px;\n            }\n            .greenBorder{\n            border: 2px solid green;\n            }\n            \n        "]
+            styles: ["\n            article{\n                border: 3px solid red;\n                margin-bottom: 5px;\n            }\n            .greenBorder{\n            border: 2px solid green;\n            }\n            \n        "],
         }), 
         __metadata('design:paramtypes', [])
     ], DatabindingComponent);
