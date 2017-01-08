@@ -14,6 +14,7 @@ var back_services_1 = require("./databinding/back.services");
 var AppComponent = (function () {
     function AppComponent(_back) {
         this._back = _back;
+        this.delete = false;
         this.title = "general";
         this.ser();
     }
@@ -23,7 +24,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n     test\n   </fa-databindins>\n   \n    ",
+            template: "\n        <h1>{{title}}</h1>\n   <fa-databindins>\n     test\n   </fa-databindins>\n   \n   <h3>Life cycle</h3>\n   \n   <fa-lifecycle *ngIf=\"!delete\"></fa-lifecycle>\n   <button (click) = \"delete = true\"> click me</button>\n    ",
             styles: ["\n        h1 {\n            color: red;\n        }\n    "],
         }), 
         __metadata('design:paramtypes', [back_services_1.BackServices])

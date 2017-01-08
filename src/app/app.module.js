@@ -16,6 +16,7 @@ var back_services_1 = require("./databinding/back.services");
 var proprerty_bind_componet_1 = require("./databinding/proprerty-bind.componet");
 var event_binding_component_1 = require("./databinding/event-binding.component");
 var two_way_binding_component_1 = require("./databinding/two-way-binding.component");
+var lifecycle_componenmt_1 = require("./lifecycle.componenmt");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,7 +30,8 @@ var AppModule = (function () {
                 databinding_component_1.DatabindingComponent,
                 proprerty_bind_componet_1.PropertyBindComponent,
                 event_binding_component_1.EventBindingComponent,
-                two_way_binding_component_1.TwoWayBinding
+                two_way_binding_component_1.TwoWayBinding,
+                lifecycle_componenmt_1.LifeCycleComponent
             ],
             bootstrap: [app_component_1.AppComponent],
             providers: [back_services_1.BackServices]
